@@ -59,6 +59,7 @@ p, li {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
+  height: 7%;
 }
 
 body > * {
@@ -66,7 +67,7 @@ body > * {
   background-color: green;
 }
 
-.main, .header, nav, .article, .aside, .footer, section {
+.main, .header, .nav, .article, .aside, .footer, section {
   background-color: rgba(0, 255, 0, 0.705);
   padding: 1%;
 }
@@ -86,19 +87,26 @@ nav {
   height: 50px;
   flex: 100%;
   display: flex;
-}
+  background-color: rebeccapurple;
 
+}
 nav ul {
   padding: 0;
-  list-style-type: none;
+  list-style-type:none;
   flex: 2;
-  display: flex;
+  display:inline-block;
+  background-color: orange;
 }
 
 nav li {
-  display: inline;
+  float: left;
+  display: block;
+}
+nav li a{
+  display: block;
   text-align: center;
-  flex: 1;
+  flex: 0;
+  padding: 0% 45px;
 }
 
 nav a, nav span {
@@ -148,6 +156,6 @@ nav a, nav span {
   flex-flow: row wrap;
   height: 40px;
   position: absolute;
-  top: 27px;
-  left: 825px;
+  top: 0%;
+  left: 76%;
 }
