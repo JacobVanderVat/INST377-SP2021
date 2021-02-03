@@ -3,6 +3,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #6091C3;
 }
 
 html {
@@ -15,12 +16,13 @@ body {
   min-width: 800px;
   margin: 0 auto;
   background-color: #6091C3;
+  display:block;
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Comfortaa', cursive;
   color: #2a2a2a;
 }
 
@@ -60,12 +62,12 @@ p, li {
 }
 
 body > * {
-  background-color: red;
   padding: 1%;
+  background-color: green;
 }
 
 .main, .header, nav, .article, .aside, .footer, section {
-  background-color: rgba(0,255,0,0.5);
+  background-color: rgba(0, 255, 0, 0.705);
   padding: 1%;
 }
 
@@ -75,8 +77,8 @@ h1 {
 }
 
 .header img {
-  display: block;
-  height: 60px;
+  display: flex;
+  height: 70px;
   padding-top: 20.15px;
 }
 
@@ -138,4 +140,14 @@ nav a, nav span {
 
 .footer {
   margin-top: 10px;
+}
+
+.accenter {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  height: 40px;
+  position: absolute;
+  top: 27px;
+  left: 825px;
 }
