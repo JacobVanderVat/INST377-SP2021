@@ -43,30 +43,30 @@
     cursor: pointer;
   }
   .prev {
-    left: 7px;
-  }
-  
-  .next {
-    right: 7px;
-  }
-  
-  .gallery {
-    width: 390px;
-    overflow: hidden;
-  }
-  
-  .gallery ul {
-    height: 130px;
-    width: 9999px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    transition: margin-left 250ms;
-    /* remove white-space between inline-block'ed li */
-    /* http://davidwalsh.name/remove-whitespace-inline-block */
-    font-size: 0;
-  }
-  
-  .gallery li {
-    display: inline-block;
-  }
+  left: 7px;
+}
+
+.next {
+  right: 7px;
+}
+
+.gallery {
+  width: 390px;
+  overflow: hidden;
+}
+
+.gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* remove white-space between inline-block'ed li */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+}
