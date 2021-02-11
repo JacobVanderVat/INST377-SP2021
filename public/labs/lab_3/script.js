@@ -2,7 +2,7 @@
     let count = 4; 
 
     let list = carousel.querySelector('ul');
-    let listElems = carousel.querySelectorAll('li');
+    let listItems = carousel.querySelectorAll('li');
 
     let position = 0; 
 
@@ -14,6 +14,6 @@
 
     carousel.querySelector('.next').onclick = function() {
       position -= width * count;
-      position = Math.max(position, -width * (listElems.length - count));
+      position = Math.max(position, -width * (listItems.length - count));
       list.style.marginLeft = position + 'px';
     };
