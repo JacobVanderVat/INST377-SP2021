@@ -1,40 +1,39 @@
- body {
-    padding: 10px;
-    background-color: blue;
-  }
-  
-  .carousel {
-    position: relative;
-    width: 520px;
-    padding: 10px 40px;
-    border: 1px solid #CCC;
-    border-radius: 15px;
-    background: #eee;
-    margin: auto;
-  }
-  
-  .carousel img {
-    width: 130px;
-    height: 130px;
-  }
+body {
+  padding: 10px;
+  background-color: blue;
+}
 
-  .arrow {
-    position: absolute;
-    top: 60px;
-    padding: 0;
-    background: rgb(255, 255, 255);
-    border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    display: block;
-  }
-  
-  .arrow:hover {
-    background: #ccc;
-    cursor: pointer;
-  }
-  .prev {
+.carousel {
+  position: relative;
+  width: 550px;
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background: #eee;
+  margin: auto;
+}
+
+.carousel img {
+  width: 130px;
+  height: 130px;
+}
+
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.prev {
   left: 7px;
 }
 
@@ -43,7 +42,7 @@
 }
 
 .gallery {
-  width: 520px;
+  width: 550px;
   overflow: hidden;
 }
 
@@ -52,8 +51,6 @@
   margin: auto;
   padding: 0;
   list-style: none;
-  transition: margin-left 250ms;
-  font-size: 0;
 }
 
 .gallery li {
