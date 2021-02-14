@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded' , () => {
     }
     document.addEventListener('keyup', control)
 
-
+    // at 1:04:25
 
     function generateObstacle(){
-        
+
     }
 
 })
