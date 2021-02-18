@@ -24,23 +24,25 @@ h1 {
 .flex-outer,
 .flex-inner {
   list-style-type: none;
-  padding: 0;
+  padding: 0px 16px;
+  width: auto;
 }
 
 .flex-outer {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin-left: 0px;
 }
 
 .flex-outer li,
 .flex-inner {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .flex-inner {
   padding: 0 8px;
-  
+  justify-content: space-between;
 }
 
 .flex-outer > li:not(:last-child) {
@@ -57,13 +59,13 @@ h1 {
 
 .flex-outer > li > label,
 .flex-outer li p {
-  flex: 1 0 120px;
-  max-width: 220px;
+  flex: 1 0 125px;
+  max-width: 225px;
 }
 
 .flex-outer > li > label + *,
 .flex-inner {
-  flex: 1 0 220px;
+  flex: 1 0 225px;
 }
 
 .flex-outer li p {
@@ -77,16 +79,16 @@ h1 {
 }
 
 .flex-outer li button {
-  margin-left: auto;
-  padding: 8px 16px;
+  margin-left: 0px;
+  padding: 6px 12px;
   border: none;
   background: #333;
   color: #f2f2f2;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
-  border-radius: 2px;
+  letter-spacing: 1.2px;
+  border-radius: 3px;
 }
 
 .flex-inner li {
-  width: 100px;
+  width: 80px;
 }
