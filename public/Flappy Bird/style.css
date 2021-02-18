@@ -52,7 +52,7 @@ body {
 }
 
 .bird {
-    background-image: url('flappy-bird.png');
+    background-color: yellow;
     position: absolute;
     width: 60px;
     height: 45px;
