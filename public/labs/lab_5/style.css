@@ -1,0 +1,16 @@
+#mapid {height: 480px;}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+.list-header{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.list-item{
+    border-radius: 4px;
+    color: rgda(25, 25, 25, 90);
+    background: cyan;
+    padding: 5px;
+}
