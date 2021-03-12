@@ -24,18 +24,19 @@ async function dataHandler(mapObjectFromFunction) {
   const targetList = document.querySelector(".target-list");
 
   const request = await fetch("/api");
-  const data = await request.json;
+  const data = await request.json();
 
   form.addEventListener("submit", async (event) => {
-    event.preventDefault;
+    event.preventDefault();
     const filtered = data.filter(
       (record) => record.zip.includes(search.value) && record.geocoded_column_1
     );
     console.log("Submit Fired");
     console.log(search.value);
-    console.table(fitlered);
+    console.table(filtered);
     filtered.forEach((item) => {
       const coords = item.geocoded_column_1.coordinates;
+      console.log(coords);
       const marker = L.marker([coords[1], coords[0]]).addTo(
         mapObjectFromFunction
       );
@@ -43,7 +44,7 @@ async function dataHandler(mapObjectFromFunction) {
       const appendItem = document.createElement("li");
       appendItem.classList.add("block");
       appendItem.classList.add("list-item");
-      appendItem.innerHTML = `<div class="list-header is-size-5>${item.name}</div><address class="is-size-6>${item.address_line_1}</address>"`;
+      appendItem.innerHTML = `<div class="list-header is-size-5">${item.name}</div><address class="is-size-6">${item.address_line_1}</address>`;
       targetList.append(appendItem);
     });
   });

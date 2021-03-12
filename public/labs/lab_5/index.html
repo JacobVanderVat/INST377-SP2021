@@ -11,20 +11,22 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
-        <link rel="stylesheet" type = "text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Jacob VanderVat's Lab 5</title>
 </head>
 
 <body>
+    <h1>Jacob VanderVat's Lab 5</h1>
     <div class="columns">
         <div class="column">
             <form action="" id="search-form">
-                <label for="search-form"></label>
-                <input type="text" id="search" name="search">
+                <label for="search-form">Enter Zip Code</label>
+                <input type="text" id="search" name="search" placeholder="Zipcode">
+                <label for="search"></label>
                 <button type="submit">Submit</button>
             </form>
-            <ul id="target-list"></ul>
+            <ul class="target-list" ></ul>
         </div>
         <div class="column">
             <div id="mapid">
